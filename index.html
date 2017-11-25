@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zgadnij co to</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto|Roboto+Mono:300,300i,400,400i,500,500i|Roboto+Slab:100,300,400,700" rel="stylesheet">
+        <script src="jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div class="alert">Nie masz już takiej podpowiedzi!</div>
+        <div id="container">
+            <h1 class="game-title">Zgadnij co to </h1>
+            <div id="game">
+                <div id="header">
+                    <div id="stan_konta">$<span id="ilosc_punktow">100</span></div>
+                    <div id="haslo_id">
+                        <span id="id_aktualne_haslo">1</span>
+                        /
+                        <span id="ilosc_hasel">20</span>
+                    </div>
+                </div>
+                <div id="image-box">  </div>
+                <div id="haslo"> </div>
+                <div id ="literki"> </div>
+                <div class="game-end">Koniec gry! </div>    
+                <div id="podpowiedz">
+                    <div id="title">
+                        Podpowiedź
+                    </div>
+                    <div id="content">   
+                        <ul>
+                            <li id="pierwsza_litera" title="-10pkt">Pierwsza litera</li>
+                            <li id="losowa_litera" title="-10pkt">Losowa litera</li>         
+                        </ul>  
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <script src="script.js"></script>
+    </body>
+</html>

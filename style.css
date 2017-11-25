@@ -1,0 +1,181 @@
+body{   background:     linear-gradient(rgba(60, 60, 60, 0.25), rgba(60, 60, 60, 0.25)), url('web-pattern.png');}
+.game-title{
+    font-size: 45px;
+    color:yellow;
+    text-align:center;
+    line-height:1.7; 
+    font-weight:bold;
+    text-shadow: 1px 1px 2px black; 
+    letter-spacing:1px; 
+    margin-bottom:0;
+}
+.game-title::after{
+    content:"";
+    height:1px; 
+    border-bottom: 1px solid yellow;  
+    display:block; 
+    width:20%; 
+    margin:0 auto;
+}
+#container{
+    width: 900px;
+    height:950px;
+    margin: 0 auto;  
+    background: #132556 ;
+    border: 2px solid #1f3677;
+    padding: 15px;
+    color: white;
+    overflow: hidden;     
+}
+.alert{  background:rgba(255,0,0,0.85); 
+    color:whitte; 
+    position:fixed; top:50%; left:50%; 
+    transform: translateX(-50%) translateY(-50%); 
+    color:white; padding:30px 40px; 
+    font-size: 23px; 
+    text-align:center; 
+    font-weight: bold; border:1px solid yellow; display:none;}
+.game-end{
+    font-size: 45px;
+    color:white;
+    text-align:center;
+    line-height:1.7; 
+    font-weight:bold;
+    text-shadow: 1px 1px 2px black; 
+    letter-spacing:1px; 
+    margin-bottom:0;
+    margin-top:30px;
+    text-transform:uppercase;
+    display:none;
+}
+#header{
+    font-size:  20px; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;   
+}
+#header #haslo_id {
+    color: lightgoldenrodyellow;
+    margin-top:90px;
+}
+#header #stan_konta{
+   text-align: right;  
+   margin-top: -65px;
+  color: darkgoldenrod;
+}
+#image-box{
+ text-align:center;
+    margin: 0 auto;
+    margin-bottom:100px;
+    margin-top:20px;
+}
+#image-box #image{
+   padding: 15px;
+   background: #1f3677;  
+}
+#haslo{
+   font-family: 'Roboto Mono', monospace; 
+    font-size:40px;
+    font-weight:bold;
+    color:white;
+    height:100px;
+    line-height: 62px;
+    text-align:center;  
+}
+#literki{
+  text-align: center;
+margin-top: 50px;
+}
+#literki .literka {
+    display:inline-block;
+    width:40px;
+    height:40px;
+     font-family: 'Roboto Mono', monospace; 
+    font-size: 35px; 
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid lightyellow;
+    color: lightyellow;
+    text-align:center;
+    margin: 5px;
+    padding:5px;
+        -webkit-transition: all 500ms; /* Safari */
+    transition: all 500ms;
+}
+#literki .literka:hover{
+    cursor:pointer;
+      color: #a0a000;
+    border-color:  #ffff65;
+}
+#podpowiedz{
+    float:right;
+    padding:15px;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    position: relative;
+    top: -300px;
+    right: -255px;
+    z-index: 99999;
+    transition: right 0.5s ease-out 0s;
+}
+#podpowiedz:hover {
+    right: -90px;
+}
+#podpowiedz #content {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-top: 1px solid orangered;
+    border-right: none;
+    border-bottom: 1px solid orangered;
+    border-left: 1px solid  orangered;
+    z-index: 20;
+    background:  #1f3677;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+#podpowiedz #content ul li{
+    cursor: pointer;
+    margin-top:15px;
+    list-style-type: none;
+    font-weight:400;
+    font-family: 'Roboto Slab', serif;
+    font-size:14px;
+} 
+#podpowiedz #content ul li:hover{
+    color: #f9f56b;
+}
+#podpowiedz #title {
+    font-family: 'Righteous', cursive;
+    width: 150px;
+    border: 2px solid orangered;
+    background: #dcdcdc;
+    color: orangered;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 140px;
+    left: -100px;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+.btn-nastepny,.btn-zle{
+    color: white;
+    background: orangered;
+    border-radius:5px;
+    width:200px;
+    height: 60px;
+    font-size: 27px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    margin: 0 auto;
+    display:inline-block;
+    cursor: pointer;
+}
+.btn-nastepny{
+     background: green;
+}
