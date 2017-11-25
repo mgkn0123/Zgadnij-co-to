@@ -134,7 +134,7 @@ $(document).ready(function () {
         $('.letter-mask').click(function () {
             //alert(this.innerHTML);
             var letter_content = this.innerHTML;
-            if ((letter_content !== "") && ($(this).css('color') !== 'rgb(0, 128, 0)')) {
+            if ((letter_content !== "") && ($(this).css('color') !== 'rgb(0, 128, 0)') && ($(this).css('color') !== 'rgb(255, 0, 0)')) {
                 this.innerHTML = "";
                 $(this).css({"width": "40px", "height": "45px", "background": "transparent", "color": "white", "text-align": "center",
                     "border-bottom": "2px solid white", "display": "inline-block", "margin": "5px", "cursor": "auto"});
@@ -194,6 +194,7 @@ $(document).ready(function () {
                         wyswietlPunkty();
                         nastepneHaslo();
                     } else {
+                        $(".letter-mask").css({"border": "none", "width": "auto", "cursor": "auto", "color": "red"});
                         $("#literki").append('<div class="btn-zle" title="Kliknij aby spróbować jeszcze raz">Źle!</div>');
                         sprobujJeszczeRaz();
                     }
@@ -293,6 +294,8 @@ $(document).ready(function () {
                 wprowadzone[i] = maska[i];
             wyswietlLiterki();
             wczytajHaslo();
+            $("#pierwsza_litera").css({"color": "white", "cursor": "pointer"});
+            $("#losowa_litera").css({"color": "white", "cursor": "pointer"});
         });
     }
 
